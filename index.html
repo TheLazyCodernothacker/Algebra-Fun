@@ -260,7 +260,11 @@
                     search_it();
                 }
             })
-
+document.onvisibilitychange = function() {
+  if (document.visibilityState === 'hidden') {
+    window.location.replace("https://google.com");
+  }
+};
         </script>
     </body>
 </html>
